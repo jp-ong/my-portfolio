@@ -1,0 +1,74 @@
+@import "config";
+section.introSection {
+  display: grid;
+  grid-template-columns: 0.6fr 0.4fr;
+  align-items: flex-start;
+
+  & > .info {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+
+    & > .name {
+      margin-bottom: 2em;
+
+      display: flex;
+      flex-flow: column nowrap;
+
+      & > .bubble {
+        width: fit-content;
+
+        padding: 0 1em;
+
+        background-color: $bg;
+        border: solid 1px;
+        border-radius: 0.75em 0.75em 0 0.75em;
+
+        align-self: flex-end;
+        display: flex;
+        align-items: center;
+      }
+      & > h1 {
+        margin-bottom: 0.5em;
+      }
+    }
+
+    & > .contact {
+      width: 100%;
+      margin-bottom: 0.75em;
+
+      & > i {
+        margin-right: 1ch;
+      }
+    }
+  }
+
+  & > .image {
+    height: 20em;
+    width: 20em;
+    position: relative;
+
+    & > img {
+      border-radius: 50%;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+
+      border-radius: 50%;
+      opacity: 0.1;
+    }
+    &::before {
+      box-shadow: 0 0 0em 2em $fg;
+    }
+    &::after {
+      box-shadow: 0 0 0em 1em $fg;
+    }
+  }
+}
