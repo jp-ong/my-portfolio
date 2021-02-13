@@ -3,11 +3,7 @@ import Image from "next/image";
 
 const AboutSection = () => {
   return (
-    <section
-      id="about"
-      className={styles.aboutSection}
-      onFocus={() => console.log("Hello")}
-    >
+    <section id="about" className={styles.aboutSection}>
       <div className={styles.image}>
         <Image
           src="/images/about.jpg"

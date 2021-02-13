@@ -8,7 +8,7 @@ const IntroSection = () => {
         <div className={styles.name}>
           <div className={styles.bubble}>Hello, I'm</div>
           <h1>John Paul Ong</h1>
-          <h3>Full Stack JavaScript Developer</h3>
+          <h2>Full Stack JavaScript Developer</h2>
         </div>
         <div className={styles.contact}>
           <span aria-hidden className="fas fa-envelope" />
@@ -25,9 +25,11 @@ const IntroSection = () => {
         <div className={styles.links}>
           <a href="https://www.facebook.com/johnpaul5202">
             <span aria-hidden className="fab fa-facebook-f" />
+            <span className={styles.screenReader}>Link to my Facebook</span>
           </a>
           <a href="https://github.com/jp-ong">
             <span aria-hidden className="fab fa-github" />
+            <span className={styles.screenReader}>Link to my GitHub</span>
           </a>
         </div>
       </div>

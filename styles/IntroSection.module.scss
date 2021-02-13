@@ -21,6 +21,12 @@ section.introSection {
       display: flex;
       flex-flow: column nowrap;
 
+      & > h2 {
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+        font-weight: 300;
+      }
+
       & > .bubble {
         width: fit-content;
 
@@ -61,6 +67,18 @@ section.introSection {
         &:hover {
           background-color: $fg;
           color: $bg;
+        }
+        & span.screenReader {
+          border: 0;
+          clip: rect(1px, 1px, 1px, 1px);
+          clip-path: inset(50%);
+          height: 1px;
+          margin: -1px;
+          overflow: hidden;
+          padding: 0;
+          position: absolute;
+          width: 1px;
+          word-wrap: normal !important;
         }
       }
     }

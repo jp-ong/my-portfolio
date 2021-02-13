@@ -1,4 +1,34 @@
 @import "config";
 
 section.skillsSection {
+  & > .grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 3vw;
+    margin-top: 3em;
+
+    & > .card {
+      justify-self: center;
+      transition: 125ms ease-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      & > .image {
+        width: fit-content;
+        height: fit-content;
+
+        padding: 0.5em;
+        background-image: linear-gradient($fg 95%, $bg);
+        border-radius: 5% 5% 0 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        box-shadow: 0 0 2rem -0.5rem black;
+        transition: 125ms;
+      }
+    }
+  }
 }
