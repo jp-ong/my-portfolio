@@ -32,3 +32,19 @@ section.skillsSection {
     }
   }
 }
+
+@media only screen and (max-width: 1080px) {
+  section.skillsSection {
+    & > .grid {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section.skillsSection {
+    & > .grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

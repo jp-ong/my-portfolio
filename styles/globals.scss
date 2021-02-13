@@ -8,7 +8,6 @@ body {
   background-color: $bg;
   color: $fg;
   font-family: $soft;
-  border-color: $fg;
 }
 
 a {
@@ -23,8 +22,9 @@ a {
 }
 
 main {
-  width: 70vw;
-  margin: 0 auto;
+  width: auto;
+  margin: 0 5vw;
+  border-color: inherit;
 }
 
 img {
@@ -35,34 +35,47 @@ img {
 }
 
 nav {
-  position: sticky;
-  top: 0;
-  background-color: $bg;
-  border-bottom: solid 1px $fg;
-  border-radius: 0 0 5% 5%;
-  box-shadow: 0 0 2rem -0.5rem black;
+  position: fixed;
+  bottom: 0;
 
-  width: 80vw;
-  height: 4rem;
-  margin: 0 auto;
-  padding-bottom: 0.5em;
+  width: 100vw;
+  height: 3rem;
 
   font-family: $nova;
   font-weight: 600;
   z-index: 10;
+  background-color: $bg;
+  border-color: $fg;
+  color: $fg;
+  transition: 125ms;
 
-  ul {
+  & > ul {
     height: 100%;
     list-style: none;
 
     display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly;
     flex-flow: row nowrap;
+    border-color: inherit;
 
-    li {
-      &.active {
-        text-decoration: underline solid 5px $fg;
+    & > li {
+      width: 100%;
+      height: 100%;
+      border-color: inherit;
+      & > a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: solid 1px;
+        border-color: inherit;
+        background-color: inherit;
+        color: inherit;
+        transition: 125ms;
+        &:hover,
+        &.active {
+          background-color: $trim;
+        }
       }
     }
   }
@@ -88,4 +101,42 @@ h3 {
   font-size: 1.5rem;
   line-height: 1.75rem;
   font-weight: 300;
+}
+
+@media only screen and (max-width: 1080px) {
+  html {
+    font-size: 1.5vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+  section {
+    padding: 3rem 1vw;
+    margin: 10rem 0;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  html {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+  section {
+    padding: 1rem 1vw;
+    margin: 1em 0 5rem;
+  }
 }

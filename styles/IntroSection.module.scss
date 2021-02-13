@@ -3,6 +3,7 @@ section.introSection {
   display: grid;
   grid-template-columns: 0.6fr 0.4fr;
   align-items: flex-start;
+  justify-content: space-evenly;
   gap: 5vw;
 
   & > div {
@@ -34,9 +35,9 @@ section.introSection {
 
         background-color: $bg;
         border: solid 1px;
-        border-radius: 0.75em 0.75em 0 0.75em;
+        border-radius: 0.75em 0.75em 0.75em 0;
 
-        align-self: flex-end;
+        align-self: flex-start;
         display: flex;
         align-items: center;
       }
@@ -55,7 +56,7 @@ section.introSection {
     }
 
     & > .links {
-      width: fit-content;
+      width: 100%;
       padding: 0.25em;
       border-top: dashed 1px;
       border-bottom: dashed 1px;
@@ -106,10 +107,21 @@ section.introSection {
       opacity: 0.1;
     }
     &::before {
-      box-shadow: 0 0 0em 2em $fg;
+      box-shadow: 0 0 0em 2em $trim;
     }
     &::after {
       box-shadow: 0 0 0em 1em $fg;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section.introSection {
+    grid-template-columns: 1fr;
+    & > .image {
+      margin-top: 1em;
+      width: 15em;
+      height: 15em;
     }
   }
 }
