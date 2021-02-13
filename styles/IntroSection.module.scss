@@ -3,6 +3,11 @@ section.introSection {
   display: grid;
   grid-template-columns: 0.6fr 0.4fr;
   align-items: flex-start;
+  gap: 5vw;
+
+  & > div {
+    justify-self: center;
+  }
 
   & > .info {
     display: flex;
@@ -11,6 +16,7 @@ section.introSection {
 
     & > .name {
       margin-bottom: 2em;
+      border-bottom: solid 1px;
 
       display: flex;
       flex-flow: column nowrap;
@@ -37,8 +43,25 @@ section.introSection {
       width: 100%;
       margin-bottom: 0.75em;
 
-      & > i {
+      & > span {
         margin-right: 1ch;
+      }
+    }
+
+    & > .links {
+      width: fit-content;
+      padding: 0.25em;
+      border-top: dashed 1px;
+      border-bottom: dashed 1px;
+      & > a {
+        padding: 0 1em;
+        margin: 0 0.5em;
+        transition: 125ms;
+        border-radius: 10%;
+        &:hover {
+          background-color: $fg;
+          color: $bg;
+        }
       }
     }
   }
@@ -48,7 +71,7 @@ section.introSection {
     width: 20em;
     position: relative;
 
-    & > img {
+    & img {
       border-radius: 50%;
     }
 

@@ -1,0 +1,32 @@
+@import "config";
+
+section.aboutSection {
+  display: grid;
+  grid-template-columns: 0.4fr 0.6fr;
+  align-items: flex-start;
+  gap: 5vw;
+
+  & > div {
+    justify-self: center;
+  }
+
+  & > .image {
+    height: 20em;
+    width: 20em;
+
+    & img {
+      border-radius: 5%;
+    }
+  }
+
+  & > .aboutMe {
+    & > h3 {
+      margin: 1.25em 0;
+    }
+    & > p {
+      margin: 1em 0;
+      line-height: 1.5em;
+      font-size: 1.125em;
+    }
+  }
+}

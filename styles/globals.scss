@@ -2,6 +2,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -37,12 +38,19 @@ img {
 nav {
   position: sticky;
   top: 0;
+  background-color: $bg;
+  border-bottom: solid 1px $fg;
+  border-radius: 0 0 5% 5%;
+  box-shadow: 0 0 2rem -0.5rem black;
 
-  width: 60vw;
-  height: 3rem;
-  margin: 0 auto 10vw;
+  width: 80vw;
+  height: 4rem;
+  margin: 0 auto;
+  padding-bottom: 0.5em;
 
+  font-family: $nova;
   font-weight: 600;
+  z-index: 10;
 
   ul {
     height: 100%;
@@ -62,10 +70,23 @@ nav {
 }
 
 section {
+  padding: 5rem 3vw;
+  margin: 5rem 0;
   font-size: 1rem;
 }
 
 h1 {
   font-size: 5rem;
   line-height: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  font-weight: 300;
 }

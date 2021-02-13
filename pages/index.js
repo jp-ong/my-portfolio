@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Layout from "components/Layout";
-import Intro from "components/Intro";
+import IntroSection from "components/IntroSection";
+import AboutSection from "components/AboutSection";
+import SkillsSection from "components/SkillsSection";
 
 export default function IndexPage() {
   return (
@@ -10,7 +12,9 @@ export default function IndexPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <Intro />
+        <IntroSection />
+        <AboutSection />
+        <SkillsSection />
       </Layout>
     </>
   );
