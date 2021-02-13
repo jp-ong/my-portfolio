@@ -5,11 +5,27 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="stylesheet" href="https://use.typekit.net/grh1oad.css" />
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-1KLVER5EP8"
+          ></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-1KLVER5EP8');
+        `,
+            }}
+          />
           <script
             src="https://kit.fontawesome.com/b20e5faf37.js"
             crossOrigin="anonymous"
+            defer
           />
+          <link rel="stylesheet" href="https://use.typekit.net/grh1oad.css" />
         </Head>
         <body>
           <Main />
