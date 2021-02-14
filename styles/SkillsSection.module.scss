@@ -1,6 +1,29 @@
 @import "config";
 
 section.skillsSection {
+  & > h2 {
+    margin-bottom: 1rem;
+  }
+  & > h3 {
+    margin: 1.25em 0 -1.25em;
+    border-bottom: solid 1px;
+    font-weight: 700;
+  }
+  & > span {
+    font-size: 1.125em;
+    &.red {
+      color: red;
+    }
+    &.orange {
+      color: orange;
+    }
+    &.green {
+      color: green;
+    }
+    &.blue {
+      color: blue;
+    }
+  }
   & > .grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -28,6 +51,21 @@ section.skillsSection {
 
         box-shadow: 0 0 2rem -0.5rem black;
         transition: 125ms;
+      }
+      & > b {
+        text-decoration: solid underline 7px;
+        &.red {
+          text-decoration-color: red;
+        }
+        &.orange {
+          text-decoration-color: orange;
+        }
+        &.green {
+          text-decoration-color: limegreen;
+        }
+        &.blue {
+          text-decoration-color: blue;
+        }
       }
     }
   }
