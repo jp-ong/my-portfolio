@@ -8,7 +8,7 @@ const Navbar = () => {
         <li>
           <Link href="#">
             <a
-              className={link === "top" && "active"}
+              className={link === "top" ? "active" : undefined}
               onClick={() => setLink("top")}
             >
               Home
@@ -18,7 +18,7 @@ const Navbar = () => {
         <li>
           <Link href="#about">
             <a
-              className={link === "about" && "active"}
+              className={link === "about" ? "active" : undefined}
               onClick={() => setLink("about")}
             >
               About
@@ -28,7 +28,7 @@ const Navbar = () => {
         <li>
           <Link href="#skills">
             <a
-              className={link === "skills" && "active"}
+              className={link === "skills" ? "active" : undefined}
               onClick={() => setLink("skills")}
             >
               Skills
@@ -38,7 +38,7 @@ const Navbar = () => {
         <li>
           <Link href="#contact">
             <a
-              className={link === "contact" && "active"}
+              className={link === "contact" ? "active" : undefined}
               onClick={() => setLink("contact")}
             >
               Contact
