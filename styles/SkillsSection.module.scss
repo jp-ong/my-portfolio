@@ -11,17 +11,19 @@ section.skillsSection {
   }
   & > span {
     font-size: 1.125em;
+    border-left: solid 5px;
+    padding-left: 0.25em;
     &.red {
-      color: red;
+      border-left-color: red;
     }
     &.orange {
-      color: orange;
+      border-left-color: orange;
     }
     &.green {
-      color: green;
+      border-left-color: green;
     }
     &.blue {
-      color: blue;
+      border-left-color: blue;
     }
   }
   & > .grid {
@@ -31,6 +33,7 @@ section.skillsSection {
     margin-top: 3em;
 
     & > .card {
+      display: block;
       justify-self: center;
       transition: 125ms ease-out;
       &:hover {
@@ -42,8 +45,8 @@ section.skillsSection {
         height: fit-content;
 
         padding: 0.5em;
-        background-image: linear-gradient($fg 95%, $bg);
-        border-radius: 5% 5% 0 0;
+        background-color: $fg;
+        border-radius: 5%;
 
         display: flex;
         align-items: center;
@@ -52,19 +55,19 @@ section.skillsSection {
         box-shadow: 0 0 2rem -0.5rem black;
         transition: 125ms;
       }
-      & > b {
-        text-decoration: solid underline 7px;
+      & > .label {
+        border-bottom: solid 4px;
         &.red {
-          text-decoration-color: red;
+          border-bottom-color: red;
         }
         &.orange {
-          text-decoration-color: orange;
+          border-bottom-color: orange;
         }
         &.green {
-          text-decoration-color: limegreen;
+          border-bottom-color: limegreen;
         }
         &.blue {
-          text-decoration-color: blue;
+          border-bottom-color: blue;
         }
       }
     }
@@ -83,6 +86,14 @@ section.skillsSection {
   section.skillsSection {
     & > .grid {
       grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  section.skillsSection {
+    & > .grid {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }
