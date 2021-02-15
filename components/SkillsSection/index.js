@@ -94,16 +94,16 @@ const SkillsSection = () => {
           level={3}
         />
         <SkillCard
-          imgSrc="/skills/vue.svg"
-          label="&diams; Vue.js"
-          link="https://vuejs.org/"
-          level={1}
-        />
-        <SkillCard
           imgSrc="/skills/redux.svg"
           label="&hearts; Redux.js"
           link="https://redux.js.org/"
           level={2}
+        />
+        <SkillCard
+          imgSrc="/skills/vue.svg"
+          label="&diams; Vue.js"
+          link="https://vuejs.org/"
+          level={1}
         />
         <SkillCard
           imgSrc="/skills/bootstrap.svg"
@@ -154,16 +154,16 @@ const SkillsSection = () => {
           level={1}
         />
         <SkillCard
-          imgSrc="/skills/linux.svg"
-          label="&clubs; Linux"
-          link="https://en.wikipedia.org/wiki/Linux"
-          level={0}
-        />
-        <SkillCard
           imgSrc="/skills/vercel.svg"
           label="&diams; Vercel"
           link="https://vercel.com/"
           level={1}
+        />
+        <SkillCard
+          imgSrc="/skills/linux.svg"
+          label="&clubs; Linux"
+          link="https://en.wikipedia.org/wiki/Linux"
+          level={0}
         />
       </div>
     </section>
