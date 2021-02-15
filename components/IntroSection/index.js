@@ -54,7 +54,7 @@ const InfoContact = ({ icon, label }) => (
 );
 
 const InfoLink = ({ icon, link, reader }) => (
-  <a href={link}>
+  <a href={link} target="_blank" rel="noopener noreferrer">
     <span aria-hidden className={icon} />
     <span className={styles.screenReader}>{reader}</span>
   </a>
