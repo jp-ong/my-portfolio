@@ -7,7 +7,7 @@ const IntroSection = () => {
       <IntroInfo />
       <div className={styles.image}>
         <Image
-          src="/images/profile.jpg"
+          src="/images/headshot.jpg"
           alt="John Paul Ong"
           width={320}
           height={320}
