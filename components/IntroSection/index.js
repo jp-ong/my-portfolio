@@ -1,10 +1,27 @@
 import styles from "styles/IntroSection.module.scss";
 import Image from "next/image";
-import Link from "next/link";
+import { useRef, useState, useEffect } from "react";
 
-const IntroSection = () => {
+const IntroSection = ({ setActive }) => {
+  const observer = useRef();
+  const options = { threshold: 0.75 };
+
+  const [ref, setRef] = useState(null);
+
+  useEffect(() => {
+    observer.current = new IntersectionObserver((entries, observer) => {
+      entries.forEach(
+        (entry) => entry.isIntersecting && setActive(entry.target.id)
+      );
+    }, options);
+    if (ref) observer.current.observe(ref);
+    return () => {
+      if (ref) observer.current.disconnect();
+    };
+  }, [ref]);
+
   return (
-    <section id="intro" className={styles.introSection}>
+    <section id="intro" className={styles.introSection} ref={setRef}>
       <IntroInfo />
       <div className={styles.image}>
         <Image

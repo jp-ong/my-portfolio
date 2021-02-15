@@ -1,5 +1,6 @@
 import styles from "styles/SkillsSection.module.scss";
 import Image from "next/image";
+import { useRef, useState, useEffect } from "react";
 
 const color = {
   0: "blue",
@@ -8,9 +9,26 @@ const color = {
   3: "red",
 };
 
-const SkillsSection = () => {
+const SkillsSection = ({ setActive }) => {
+  const observer = useRef();
+  const options = { threshold: 0.25 };
+
+  const [ref, setRef] = useState(null);
+
+  useEffect(() => {
+    observer.current = new IntersectionObserver((entries, observer) => {
+      entries.forEach(
+        (entry) => entry.isIntersecting && setActive(entry.target.id)
+      );
+    }, options);
+    if (ref) observer.current.observe(ref);
+    return () => {
+      if (ref) observer.current.disconnect();
+    };
+  }, [ref]);
+
   return (
-    <section id="skills" className={styles.skillsSection}>
+    <section id="skills" className={styles.skillsSection} ref={setRef}>
       <h2>My Skills</h2>
       <span className={styles.red}>
         &spades;&nbsp;Experienced and most confident at

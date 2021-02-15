@@ -75,11 +75,17 @@ section.introSection {
       padding: 0.25em;
       border-top: dashed 1px;
       border-bottom: dashed 1px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
       & > a {
-        padding: 0 1em;
+        display: flex;
+        height: 2em;
+        padding: 0 2em;
         margin: 0 0.5em;
         transition: 125ms;
-        border-radius: 10%;
+        border-radius: 0.25em;
+        align-items: center;
         &:hover {
           background-color: $fg;
           color: $bg;

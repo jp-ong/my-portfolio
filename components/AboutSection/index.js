@@ -1,9 +1,27 @@
 import styles from "styles/AboutSection.module.scss";
 import Image from "next/image";
+import { useRef, useState, useEffect } from "react";
 
-const AboutSection = () => {
+const AboutSection = ({ setActive }) => {
+  const observer = useRef();
+  const options = { threshold: 0.75 };
+
+  const [ref, setRef] = useState(null);
+
+  useEffect(() => {
+    observer.current = new IntersectionObserver((entries, observer) => {
+      entries.forEach(
+        (entry) => entry.isIntersecting && setActive(entry.target.id)
+      );
+    }, options);
+    if (ref) observer.current.observe(ref);
+    return () => {
+      if (ref) observer.current.disconnect();
+    };
+  }, [ref]);
+
   return (
-    <section id="about" className={styles.aboutSection}>
+    <section id="about" className={styles.aboutSection} ref={setRef}>
       <div className={styles.image}>
         <Image
           src="/images/about.jpg"

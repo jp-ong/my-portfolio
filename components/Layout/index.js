@@ -1,9 +1,9 @@
 import Navbar from "components/Navbar";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, active }) => {
   return (
     <>
-      <Navbar />
+      <Navbar active={active} />
       <main>{children}</main>
     </>
   );
