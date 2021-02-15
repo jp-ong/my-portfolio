@@ -8,6 +8,9 @@ body {
   background-color: $bg;
   color: $fg;
   font-family: $soft;
+  background-image: url("/images/pattern.jpg");
+  background-repeat: repeat;
+  background-blend-mode: color-dodge;
 }
 
 a {
