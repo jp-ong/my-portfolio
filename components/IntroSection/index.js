@@ -1,5 +1,6 @@
 import styles from "styles/IntroSection.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 const IntroSection = () => {
   return (
@@ -43,6 +44,9 @@ const IntroInfo = () => (
         reader="Link to my GitHub"
       />
     </div>
+    <a href="/Ong_JohnPaul.pdf" download>
+      Download my CV
+    </a>
   </div>
 );
 
@@ -54,7 +58,7 @@ const InfoContact = ({ icon, label }) => (
 );
 
 const InfoLink = ({ icon, link, reader }) => (
-  <a href={link} target="_blank" rel="noopener noreferrer">
+  <a href={link} target="_blank" rel="noopener noreferrer" title={reader}>
     <span aria-hidden className={icon} />
     <span className={styles.screenReader}>{reader}</span>
   </a>
