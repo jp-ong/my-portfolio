@@ -1,5 +1,4 @@
 import styles from "styles/AboutSection.module.scss";
-import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
 
 const AboutSection = ({ setActive }) => {
@@ -23,7 +22,7 @@ const AboutSection = ({ setActive }) => {
   return (
     <section id="about" className={styles.aboutSection} ref={setRef}>
       <div className={styles.image}>
-        <Image
+        <img
           src="/images/about.jpg"
           alt="About Me"
           width={320}

@@ -1,5 +1,4 @@
 import styles from "styles/SkillsSection.module.scss";
-import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
 
 const color = {
@@ -202,7 +201,7 @@ const SkillCard = ({ imgSrc, label, link, level }) => (
     rel="noopener noreferrer"
   >
     <div className={styles.image}>
-      <Image src={imgSrc} width={100} height={100} alt={label} />
+      <img src={imgSrc} width={100} height={100} alt={label} />
     </div>
     <div className={`${styles.label} ${styles[color[level]]}`}>{label}</div>
   </a>

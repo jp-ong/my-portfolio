@@ -1,5 +1,4 @@
 import styles from "styles/IntroSection.module.scss";
-import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
 
 const IntroSection = ({ setActive }) => {
@@ -24,7 +23,7 @@ const IntroSection = ({ setActive }) => {
     <section id="intro" className={styles.introSection} ref={setRef}>
       <IntroInfo />
       <div className={styles.image}>
-        <Image
+        <img
           src="/images/headshot.jpg"
           alt="John Paul Ong"
           width={320}
