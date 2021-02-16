@@ -10,7 +10,7 @@ export default function IndexPage() {
   return (
     <>
       <Head>
-        <title>John Paul Ong</title>
+        <title>John Paul Ong | Full Stack JavaScript Developer</title>
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"

@@ -25,6 +25,7 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
             defer
           />
+          <link rel="canonical" href="https://ong.vercel.app/" />
           <link rel="stylesheet" href="https://use.typekit.net/grh1oad.css" />
         </Head>
         <body>

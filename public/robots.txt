@@ -1,1 +1,2 @@
 User-agent: *
+Sitemap: https://ong.vercel.app/sitemap.xml
