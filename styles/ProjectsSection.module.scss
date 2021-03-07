@@ -2,16 +2,24 @@ section.projectsSection {
   h2 {
     margin-bottom: 0.25em;
   }
+  h4 {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0.25em;
+  }
   a {
+    font-size: 0.875em;
     text-decoration: underline;
     &.disabled {
       opacity: 0.75;
       text-decoration: none;
     }
   }
+
   .projects {
     margin: 0.5em 0;
   }
+
   .project {
     display: grid;
     grid-template-columns: 1fr;
@@ -20,6 +28,10 @@ section.projectsSection {
     margin: 1em 0 2em;
     img {
       border-radius: 0.25rem;
+      transition: 125ms ease-in-out;
+      &:hover {
+        transform: scale(1.125);
+      }
     }
     .description {
       display: flex;
@@ -27,15 +39,31 @@ section.projectsSection {
       justify-content: flex-start;
       align-items: flex-start;
       gap: 0.125em;
-      a {
-        font-size: 0.875em;
-      }
       p {
         margin-top: 0.25em;
         line-height: 1.125em;
         font-size: 1.125em;
       }
     }
+  }
+
+  .designsImages {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2em;
+    img {
+      border-radius: 0.25em;
+    }
+  }
+  .portraitDesigns {
+    width: 50%;
+    margin: auto;
+  }
+  .portraitDesigns,
+  .landscapeDesigns {
+    margin: 1em auto;
   }
 }
 
@@ -44,6 +72,9 @@ section.projectsSection {
     .project {
       grid-template-columns: 0.3fr 0.7fr;
       gap: 1em;
+    }
+    .designsImages {
+      flex-flow: nowrap;
     }
   }
 }

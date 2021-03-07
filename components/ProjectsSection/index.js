@@ -29,6 +29,7 @@ const projects = [
   },
   {
     demoLink: "http://syntax-api-server.herokuapp.com/",
+    repoLink: "https://github.com/jp-ong/syntax-api-server",
     imgSrc: "syntax-api-server",
     projectTitle: "Syntax - External API Server for Override Subsystems",
     projectDescription:
@@ -74,23 +75,35 @@ const ProjectsSection = ({ setActive }) => {
         View All <span class="fas fa-external-link-alt" />
       </a>
       <div className={styles.projects}>
-        {projects.map(
-          ({
-            demoLink,
-            repoLink,
-            imgSrc,
-            projectTitle,
-            projectDescription,
-          }) => (
-            <ProjectRow
-              imgSrc={imgSrc}
-              projectTitle={projectTitle}
-              projectDescription={projectDescription}
-              demoLink={demoLink}
-              repoLink={repoLink}
-            />
-          )
-        )}
+        <div>
+          <h3>
+            <b>Websites</b>
+          </h3>
+          {projects.map(
+            ({
+              demoLink,
+              repoLink,
+              imgSrc,
+              projectTitle,
+              projectDescription,
+            }) => (
+              <ProjectRow
+                imgSrc={imgSrc}
+                projectTitle={projectTitle}
+                projectDescription={projectDescription}
+                demoLink={demoLink}
+                repoLink={repoLink}
+              />
+            )
+          )}
+        </div>
+        <div>
+          <h3>
+            <b>Designs</b>
+          </h3>
+          <MusicStreamingDesigns />
+          <EBookDesigns />
+        </div>
       </div>
     </section>
   );
@@ -119,9 +132,7 @@ const ProjectRow = ({
       </a>
     </div>
     <div className={styles.description}>
-      <h3>
-        <b>{projectTitle}</b>
-      </h3>
+      <h4>{projectTitle}</h4>
       <div>
         <a
           className={!demoLink ? styles.disabled : ""}
@@ -141,6 +152,100 @@ const ProjectRow = ({
         </a>
       </div>
       <p>{projectDescription}</p>
+    </div>
+  </div>
+);
+
+const EBookDesigns = () => (
+  <div className={styles.portraitDesigns}>
+    <h4>e-Book Mobile Application</h4>
+    <div className={styles.designsImages}>
+      <a
+        href={`/images/projects/eBook/eBookLoginPage.jpg`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
+          src={`/images/projects/eBook/eBookLoginPage.jpg`}
+          width={450}
+          height={800}
+          alt="e-Book Login Page"
+          title="e-Book Login Page"
+        />
+      </a>
+      <a
+        href={`/images/projects/eBook/eBookLibraryPage.jpg`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
+          src={`/images/projects/eBook/eBookLibraryPage.jpg`}
+          width={450}
+          height={800}
+          alt="e-Book Library Page"
+          title="e-Book Library Page"
+        />
+      </a>
+      <a
+        href={`/images/projects/eBook/eBookPageContent.jpg`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
+          src={`/images/projects/eBook/eBookPageContent.jpg`}
+          width={450}
+          height={800}
+          alt="e-Book Viewing Page"
+          title="e-Book Viewing Page"
+        />
+      </a>
+    </div>
+  </div>
+);
+
+const MusicStreamingDesigns = () => (
+  <div className={styles.landscapeDesigns}>
+    <h4>Music Streaming Desktop Application</h4>
+    <div className={styles.designsImages}>
+      <a
+        href={`/images/projects/musicStreaming/musicStreamingLogin.jpg`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
+          src={`/images/projects/musicStreaming/musicStreamingLogin.jpg`}
+          width={1280}
+          height={720}
+          alt="Music Streaming Login Page"
+          title="Music Streaming Login Page"
+        />
+      </a>
+      <a
+        href={`/images/projects/eBook/musicStreamingMain.jpg`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
+          src={`/images/projects/musicStreaming/musicStreamingMain.jpg`}
+          width={1280}
+          height={720}
+          alt="Music Streaming Main Page"
+          title="Music Streaming Main Page"
+        />
+      </a>
+      <a
+        href={`/images/projects/musicStreaming/musicStreamingError.jpg`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
+          src={`/images/projects/musicStreaming/musicStreamingError.jpg`}
+          width={1280}
+          height={720}
+          alt="Music Streaming Error Page"
+          title="Music Streaming Error Page"
+        />
+      </a>
     </div>
   </div>
 );
