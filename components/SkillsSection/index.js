@@ -30,63 +30,47 @@ const SkillsSection = ({ setActive }) => {
   return (
     <section id="skills" className={styles.skillsSection} ref={setRef}>
       <h2>My Skills</h2>
-      <span className={styles.red}>
-        &spades;&nbsp;Experienced and most confident at
-      </span>
-      <br />
-      <span className={styles.orange}>
-        &hearts;&nbsp;Good and can be improved on
-      </span>
-      <br />
-      <span className={styles.green}>
-        &diams;&nbsp;Needs more use experience
-      </span>
-      <br />
-      <span className={styles.blue}>
-        &clubs;&nbsp;Used only at the basic level
-      </span>
-      <br />
       <h3>Programming / Coding</h3>
       <div className={styles.grid}>
         <SkillCard
           imgSrc="/skills/html5.svg"
-          label="&spades;&nbsp;HTML5"
+          label="HTML5"
           link="https://en.wikipedia.org/wiki/HTML"
           level={3}
         />
         <SkillCard
           imgSrc="/skills/javascript.svg"
-          label="&spades;&nbsp;JavaScript"
+          label="JavaScript"
           link="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
           level={3}
         />
         <SkillCard
           imgSrc="/skills/css.svg"
-          label="&spades;&nbsp;CSS"
+          label="CSS"
           link="https://en.wikipedia.org/wiki/CSS"
           level={3}
         />
         <SkillCard
           imgSrc="/skills/sass.svg"
-          label="&hearts;&nbsp;Sass"
+          label="Sass"
           link="https://sass-lang.com/"
           level={2}
         />
         <SkillCard
           imgSrc="/skills/java.svg"
-          label="&hearts;&nbsp;Java"
+          label="Java"
           link="https://en.wikipedia.org/wiki/Java_(programming_language)"
           level={2}
         />
         <SkillCard
           imgSrc="/skills/php.svg"
-          label="&diams;&nbsp;PHP"
+          label="PHP"
           link="https://www.php.net/"
           level={1}
         />
         <SkillCard
           imgSrc="/skills/cplusplus.svg"
-          label="&clubs;&nbsp;C++"
+          label="C++"
           link="https://en.wikipedia.org/wiki/C%2B%2B"
           level={0}
         />
@@ -95,49 +79,49 @@ const SkillsSection = ({ setActive }) => {
       <div className={styles.grid}>
         <SkillCard
           imgSrc="/skills/node.svg"
-          label="&spades;&nbsp;Node.js"
+          label="Node.js"
           link="https://nodejs.org/en/"
           level={3}
         />
         <SkillCard
           imgSrc="/skills/express.svg"
-          label="&spades;&nbsp;Express.js"
+          label="Express.js"
           link="https://expressjs.com/"
           level={3}
         />
         <SkillCard
           imgSrc="/skills/nextjs.svg"
-          label="&spades;&nbsp;Next.js"
+          label="Next.js"
           link="https://nextjs.org/"
           level={3}
         />
         <SkillCard
           imgSrc="/skills/react.svg"
-          label="&spades;&nbsp;React.js"
+          label="React.js"
           link="https://reactjs.org/"
           level={3}
         />
         <SkillCard
           imgSrc="/skills/redux.svg"
-          label="&hearts;&nbsp;Redux.js"
+          label="Redux.js"
           link="https://redux.js.org/"
           level={2}
         />
         <SkillCard
           imgSrc="/skills/vue.svg"
-          label="&diams;&nbsp;Vue.js"
+          label="Vue.js"
           link="https://vuejs.org/"
           level={1}
         />
         <SkillCard
           imgSrc="/skills/bootstrap.svg"
-          label="&clubs;&nbsp;Bootstrap"
+          label="Bootstrap"
           link="https://getbootstrap.com/"
           level={0}
         />
         <SkillCard
           imgSrc="/skills/mui.svg"
-          label="&hearts;&nbsp;Material UI"
+          label="Material UI"
           link="https://material-ui.com/"
           level={2}
         />
@@ -146,13 +130,13 @@ const SkillsSection = ({ setActive }) => {
       <div className={styles.grid}>
         <SkillCard
           imgSrc="/skills/mongodb.svg"
-          label="&spades;&nbsp;MongoDB"
+          label="MongoDB"
           link="https://www.mongodb.com/"
           level={3}
         />
         <SkillCard
           imgSrc="/skills/mysql.svg"
-          label="&clubs;&nbsp;MySQL"
+          label="MySQL"
           link="https://www.mysql.com/"
           level={0}
         />
@@ -161,31 +145,31 @@ const SkillsSection = ({ setActive }) => {
       <div className={styles.grid}>
         <SkillCard
           imgSrc="/skills/git.svg"
-          label="&spades;&nbsp;Git"
+          label="Git"
           link="https://git-scm.com/"
           level={3}
         />
         <SkillCard
           imgSrc="/skills/github.svg"
-          label="&hearts;&nbsp;GitHub"
+          label="GitHub"
           link="https://github.com/"
           level={2}
         />
         <SkillCard
           imgSrc="/skills/heroku.svg"
-          label="&diams;&nbsp;Heroku"
+          label="Heroku"
           link="https://www.heroku.com/"
           level={1}
         />
         <SkillCard
           imgSrc="/skills/vercel.svg"
-          label="&diams;&nbsp;Vercel"
+          label="Vercel"
           link="https://vercel.com/"
           level={1}
         />
         <SkillCard
           imgSrc="/skills/linux.svg"
-          label="&clubs;&nbsp;Linux"
+          label="Linux"
           link="https://en.wikipedia.org/wiki/Linux"
           level={0}
         />
@@ -204,7 +188,7 @@ const SkillCard = ({ imgSrc, label, link, level }) => (
     <div className={styles.image}>
       <Image src={imgSrc} width={100} height={100} alt={label} />
     </div>
-    <div className={`${styles.label} ${styles[color[level]]}`}>{label}</div>
+    <div className={`${styles.label}`}>{label}</div>
   </a>
 );
 
