@@ -1,0 +1,49 @@
+section.projectsSection {
+  h2 {
+    margin-bottom: 0.25em;
+  }
+  a {
+    text-decoration: underline;
+    &.disabled {
+      opacity: 0.75;
+      text-decoration: none;
+    }
+  }
+  .projects {
+    margin: 0.5em 0;
+  }
+  .project {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 1em 0 2em;
+    img {
+      border-radius: 0.25rem;
+    }
+    .description {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 0.125em;
+      a {
+        font-size: 0.875em;
+      }
+      p {
+        margin-top: 0.25em;
+        line-height: 1.125em;
+        font-size: 1.125em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  section.projectsSection {
+    .project {
+      grid-template-columns: 0.3fr 0.7fr;
+      gap: 1em;
+    }
+  }
+}

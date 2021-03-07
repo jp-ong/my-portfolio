@@ -3,6 +3,7 @@ import Layout from "components/Layout";
 import IntroSection from "components/IntroSection";
 import AboutSection from "components/AboutSection";
 import SkillsSection from "components/SkillsSection";
+import ProjectsSection from "components/ProjectsSection";
 import { useState } from "react";
 
 export default function IndexPage() {
@@ -21,6 +22,7 @@ export default function IndexPage() {
         <IntroSection setActive={setActive} />
         <AboutSection setActive={setActive} />
         <SkillsSection setActive={setActive} />
+        <ProjectsSection setActive={setActive} />
       </Layout>
     </>
   );

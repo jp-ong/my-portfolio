@@ -19,8 +19,8 @@ const Navbar = ({ active }) => {
           </Link>
         </li>
         <li>
-          <Link href="#contact">
-            <a className={active === "contact" ? "active" : ""}>Contact</a>
+          <Link href="#projects">
+            <a className={active === "projects" ? "active" : ""}>Projects</a>
           </Link>
         </li>
       </ul>
