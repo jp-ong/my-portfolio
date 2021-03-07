@@ -41,7 +41,7 @@ const IntroInfo = () => (
     <div className={styles.name}>
       <div className={styles.bubble}>Hello, I'm</div>
       <h1>John Paul Ong</h1>
-      <h2>Full Stack JavaScript Developer</h2>
+      <h2>Full Stack Web Developer</h2>
     </div>
     <InfoContact icon="fas fa-envelope" label="jpong5202@gmail.com" />
     <InfoContact icon="fas fa-phone-alt" label="+639173243289" />
