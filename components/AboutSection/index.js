@@ -37,19 +37,20 @@ const AboutSection = ({ setActive }) => {
           I'm a front-end and back-end developer from Metro Manila, Philippines.
         </h3>
         <p>
+          I'm a front-end and back-end developer from Metro Manila, Philippines.
           I enjoy taking on complex designs and visualized concepts and
           implementing them into simple and beautiful systems for production. I
-          also love the logic and structure that goes into coding and always
-          strive to write elegant and efficient code.
+          love challenging the obstacles I face, while doing it in the most
+          elegant and efficient way I am capable of.
         </p>
         <p>
           I am most confident in my ability to work with JavaScript and its
-          ecosystem as well as in my ability to learn new languages, frameworks
-          and libraries in the future.
+          ecosystem, but I am also capable of quickly learning new languages,
+          frameworks, and libraries if necessary.
         </p>
         <p>
-          When I'm not coding or pushing pixels, you'll mostly find me gaming on
-          my station or occassionally working out in the gym.
+          When I'm not programming, I'll usually be gaming, or occassionally be
+          working out in the gym.
         </p>
       </div>
     </section>
