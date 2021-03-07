@@ -10,11 +10,11 @@ export default function IndexPage() {
   return (
     <>
       <Head>
-        <title>John Paul Ong | Full Stack JavaScript Developer</title>
+        <title>John Paul Ong | Full Stack Web Developer</title>
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="I'm a front-end and back-end developer from Metro Manila, Philippines. I enjoy taking on complex designs and visualized concepts and implementing them into simple and beautiful systems for production. I also love the logic and structure that goes into coding and always strive to write elegant and efficient code."
+          content="I'm a front-end and back-end developer from Metro Manila, Philippines. I enjoy taking on complex designs and visualized concepts and implementing them into simple and beautiful systems for production. I love challenging the obstacles I face, while doing it in the most elegant and efficient way I am capable of."
         />
       </Head>
       <Layout active={active}>
