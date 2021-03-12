@@ -252,7 +252,7 @@ const MusicStreamingDesigns = () => (
 );
 
 const CurrencyConverterDesigns = () => (
-  <div className={styles.landscapeDesigns}>
+  <div className={styles.portraitDesigns}>
     <h4>Currency Converter Mobile Application</h4>
     <div className={styles.designsImages}>
       <a
