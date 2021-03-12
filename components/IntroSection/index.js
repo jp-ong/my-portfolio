@@ -62,8 +62,11 @@ const IntroInfo = () => (
         reader="Link to my GitHub"
       />
     </div>
+    <a href="/Ong_JohnPaul.docx" download>
+      Formal Resume
+    </a>
     <a href="/Ong_JohnPaul.pdf" download>
-      Download my CV
+      Creative Resume
     </a>
   </div>
 );
