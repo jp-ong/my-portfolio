@@ -70,14 +70,15 @@ nav {
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 0.5em;
         border-top: solid 1px;
         border-color: inherit;
         background-color: inherit;
-        color: inherit;
+        color: transparentize($color: $fg, $amount: 0.25);
         transition: 125ms;
         &:hover,
         &.active {
-          background-color: $trim;
+          color: $trim;
         }
       }
     }
