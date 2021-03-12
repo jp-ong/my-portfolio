@@ -13,6 +13,7 @@ section.projectsSection {
     &.disabled {
       opacity: 0.75;
       text-decoration: none;
+      pointer-events: none;
     }
   }
 
