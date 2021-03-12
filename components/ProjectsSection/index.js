@@ -72,7 +72,7 @@ const ProjectsSection = ({ setActive }) => {
         rel="noopener noreferrer"
         className={styles.external}
       >
-        View All <span class="fas fa-external-link-alt" />
+        View All <span className="fas fa-external-link-alt" />
       </a>
       <div className={styles.projects}>
         <div>

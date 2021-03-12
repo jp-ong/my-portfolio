@@ -62,12 +62,14 @@ const IntroInfo = () => (
         reader="Link to my GitHub"
       />
     </div>
-    <a href="/Ong_JohnPaul.docx" download>
-      Formal Resume
-    </a>
-    <a href="/Ong_JohnPaul.pdf" download>
-      Creative Resume
-    </a>
+    <div className={styles.resume}>
+      <a href="/Ong_JohnPaul.docx" download>
+        Formal Resume
+      </a>
+      <a href="/Ong_JohnPaul.pdf" download>
+        Creative Resume
+      </a>
+    </div>
   </div>
 );
 

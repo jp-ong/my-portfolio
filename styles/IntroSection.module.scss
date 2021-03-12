@@ -15,18 +15,20 @@ section.introSection {
     align-items: flex-start;
     flex-flow: column nowrap;
 
-    & > a {
-      margin-top: 0.25em;
-      background-color: $fg;
-      color: $bg;
-      font-weight: bold;
-      padding: 0.25em 1em;
-      border: solid 1px;
-      border-radius: 0.5em;
-      transition: 125ms;
-      &:hover {
-        background-color: $bg;
-        color: $fg;
+    & > .resume {
+      margin-top: 0.5em;
+      & > a {
+        background-color: $fg;
+        color: $bg;
+        font-weight: bold;
+        padding: 0.25em 1em;
+        border: solid 1px;
+        border-radius: 0.5em;
+        transition: 125ms;
+        &:hover {
+          background-color: $bg;
+          color: $fg;
+        }
       }
     }
 
