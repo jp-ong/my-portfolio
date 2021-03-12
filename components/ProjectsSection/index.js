@@ -47,7 +47,7 @@ const projects = [
 
 const ProjectsSection = ({ setActive }) => {
   const observer = useRef();
-  const options = { threshold: 0.25 };
+  const options = { threshold: 0.125 };
 
   const [ref, setRef] = useState(null);
 
