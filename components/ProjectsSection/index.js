@@ -80,19 +80,17 @@ const ProjectsSection = ({ setActive }) => {
             <b>Websites</b>
           </h3>
           {projects.map(
-            ({
-              demoLink,
-              repoLink,
-              imgSrc,
-              projectTitle,
-              projectDescription,
-            }) => (
+            (
+              { demoLink, repoLink, imgSrc, projectTitle, projectDescription },
+              index
+            ) => (
               <ProjectRow
                 imgSrc={imgSrc}
                 projectTitle={projectTitle}
                 projectDescription={projectDescription}
                 demoLink={demoLink}
                 repoLink={repoLink}
+                key={index}
               />
             )
           )}
