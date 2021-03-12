@@ -103,6 +103,7 @@ const ProjectsSection = ({ setActive }) => {
           </h3>
           <MusicStreamingDesigns />
           <EBookDesigns />
+          <CurrencyConverterDesigns />
         </div>
       </div>
     </section>
