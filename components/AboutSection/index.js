@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const AboutSection = ({ setActive }) => {
   const observer = useRef();
-  const options = { threshold: 0.75 };
+  const options = { threshold: 0.5 };
 
   const [ref, setRef] = useState(null);
 
