@@ -120,7 +120,7 @@ const ProjectRow = ({
       <a
         href={`/images/projects/live-thumbnails/${imgSrc}.jpg`}
         target="_blank"
-        rel="noopener noreferrer"
+        aria-label={projectTitle}
       >
         <Image
           src={`/images/projects/live-thumbnails/${imgSrc}.jpg`}
@@ -162,7 +162,7 @@ const EBookDesigns = () => (
       <a
         href={`/images/projects/eBook/eBookLoginPage.jpg`}
         target="_blank"
-        rel="noopener noreferrer"
+        aria-label="e-Book Login Page"
       >
         <Image
           src={`/images/projects/eBook/eBookLoginPage.jpg`}
@@ -175,7 +175,7 @@ const EBookDesigns = () => (
       <a
         href={`/images/projects/eBook/eBookLibraryPage.jpg`}
         target="_blank"
-        rel="noopener noreferrer"
+        aria-label="e-Book Library Page"
       >
         <Image
           src={`/images/projects/eBook/eBookLibraryPage.jpg`}
@@ -188,7 +188,7 @@ const EBookDesigns = () => (
       <a
         href={`/images/projects/eBook/eBookPageContent.jpg`}
         target="_blank"
-        rel="noopener noreferrer"
+        aria-label="e-Book Viewing Page"
       >
         <Image
           src={`/images/projects/eBook/eBookPageContent.jpg`}
@@ -209,7 +209,7 @@ const MusicStreamingDesigns = () => (
       <a
         href={`/images/projects/musicStreaming/musicStreamingLogin.jpg`}
         target="_blank"
-        rel="noopener noreferrer"
+        aria-label="Music Streaming Login Page"
       >
         <Image
           src={`/images/projects/musicStreaming/musicStreamingLogin.jpg`}
@@ -222,7 +222,7 @@ const MusicStreamingDesigns = () => (
       <a
         href={`/images/projects/musicStreaming/musicStreamingMain.jpg`}
         target="_blank"
-        rel="noopener noreferrer"
+        aria-label="Music Streaming Main Page"
       >
         <Image
           src={`/images/projects/musicStreaming/musicStreamingMain.jpg`}
@@ -235,7 +235,7 @@ const MusicStreamingDesigns = () => (
       <a
         href={`/images/projects/musicStreaming/musicStreamingError.jpg`}
         target="_blank"
-        rel="noopener noreferrer"
+        aria-label="Music Streaming Error Page"
       >
         <Image
           src={`/images/projects/musicStreaming/musicStreamingError.jpg`}
@@ -256,7 +256,7 @@ const CurrencyConverterDesigns = () => (
       <a
         href={`/images/projects/currencyConverter/currencyCalculator.jpg`}
         target="_blank"
-        rel="noopener noreferrer"
+        aria-label="Currency Converter Calculator"
       >
         <Image
           src={`/images/projects/currencyConverter/currencyCalculator.jpg`}
@@ -269,7 +269,7 @@ const CurrencyConverterDesigns = () => (
       <a
         href={`/images/projects/currencyConverter/currencyList.jpg`}
         target="_blank"
-        rel="noopener noreferrer"
+        aria-label="Currency Conversion List"
       >
         <Image
           src={`/images/projects/currencyConverter/currencyList.jpg`}
@@ -282,7 +282,7 @@ const CurrencyConverterDesigns = () => (
       <a
         href={`/images/projects/currencyConverter/currencyCheckout.jpg`}
         target="_blank"
-        rel="noopener noreferrer"
+        aria-label="Currency Converter Checkout"
       >
         <Image
           src={`/images/projects/currencyConverter/currencyCheckout.jpg`}
