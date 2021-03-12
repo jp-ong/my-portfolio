@@ -71,12 +71,10 @@ nav {
         align-items: center;
         justify-content: center;
         gap: 0.5em;
-        border-top: solid 1px;
-        border-color: inherit;
+        border-top: solid 1px darken($color: $trim, $amount: 30);
         background-color: inherit;
         color: transparentize($color: $fg, $amount: 0.25);
         transition: 125ms;
-        &:hover,
         &.active {
           color: $trim;
         }
