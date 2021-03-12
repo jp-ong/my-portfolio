@@ -80,6 +80,9 @@ nav {
         &.active {
           color: $trim;
         }
+        &:not(.active) {
+          color: transparentize($color: $fg, $amount: 0.25);
+        }
       }
     }
   }
