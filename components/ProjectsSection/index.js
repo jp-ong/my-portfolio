@@ -262,8 +262,8 @@ const CurrencyConverterDesigns = () => (
       >
         <Image
           src={`/images/projects/currencyConverter/currencyCalculator.jpg`}
-          width={1280}
-          height={720}
+          width={384}
+          height={831.6}
           alt="Currency Converter Calculator"
           title="Currency Converter Calculator"
         />
@@ -275,8 +275,8 @@ const CurrencyConverterDesigns = () => (
       >
         <Image
           src={`/images/projects/currencyConverter/currencyList.jpg`}
-          width={1280}
-          height={720}
+          width={384}
+          height={831.6}
           alt="Currency Conversion List"
           title="Currency Conversion List"
         />
@@ -288,8 +288,8 @@ const CurrencyConverterDesigns = () => (
       >
         <Image
           src={`/images/projects/currencyConverter/currencyCheckout.jpg`}
-          width={1280}
-          height={720}
+          width={384}
+          height={831.6}
           alt="Currency Converter Checkout"
           title="Currency Converter Checkout"
         />
