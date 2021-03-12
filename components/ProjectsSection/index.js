@@ -221,7 +221,7 @@ const MusicStreamingDesigns = () => (
         />
       </a>
       <a
-        href={`/images/projects/eBook/musicStreamingMain.jpg`}
+        href={`/images/projects/musicStreaming/musicStreamingMain.jpg`}
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -244,6 +244,53 @@ const MusicStreamingDesigns = () => (
           height={720}
           alt="Music Streaming Error Page"
           title="Music Streaming Error Page"
+        />
+      </a>
+    </div>
+  </div>
+);
+
+const CurrencyConverterDesigns = () => (
+  <div className={styles.landscapeDesigns}>
+    <h4>Currency Converter Mobile Application</h4>
+    <div className={styles.designsImages}>
+      <a
+        href={`/images/projects/currencyConverter/currencyCalculator.jpg`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
+          src={`/images/projects/currencyConverter/currencyCalculator.jpg`}
+          width={1280}
+          height={720}
+          alt="Currency Converter Calculator"
+          title="Currency Converter Calculator"
+        />
+      </a>
+      <a
+        href={`/images/projects/currencyConverter/currencyList.jpg`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
+          src={`/images/projects/currencyConverter/currencyList.jpg`}
+          width={1280}
+          height={720}
+          alt="Currency Conversion List"
+          title="Currency Conversion List"
+        />
+      </a>
+      <a
+        href={`/images/projects/currencyConverter/currencyCheckout.jpg`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
+          src={`/images/projects/currencyConverter/currencyCheckout.jpg`}
+          width={1280}
+          height={720}
+          alt="Currency Converter Checkout"
+          title="Currency Converter Checkout"
         />
       </a>
     </div>
