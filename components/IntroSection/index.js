@@ -44,6 +44,7 @@ const IntroInfo = () => (
       <h2>Full Stack Web Developer</h2>
     </div>
     <InfoContact icon="fas fa-envelope" label="jpong5202@gmail.com" />
+    <InfoContact icon="fas fa-envelope" label="201801383@iacademy.edu.ph" />
     <InfoContact icon="fas fa-phone-alt" label="+639173243289" />
     <InfoContact
       icon="fas fa-map-marker-alt"
