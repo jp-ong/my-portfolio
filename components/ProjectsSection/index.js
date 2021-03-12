@@ -135,17 +135,18 @@ const ProjectRow = ({
       <div>
         <a
           className={!demoLink ? styles.disabled : ""}
-          href={demoLink}
+          href={demoLink || "/"}
           target="_blank"
           rel="noopener noreferrer"
+          rel={!demoLink ? "nofollow" : "noopener noreferrer"}
         >
           Live Demo
         </a>{" "}
         <a
           className={!repoLink ? styles.disabled : ""}
-          href={repoLink}
+          href={repoLink || "/"}
           target="_blank"
-          rel="noopener noreferrer"
+          rel={!repoLink ? "nofollow" : "noopener noreferrer"}
         >
           Source Code
         </a>
