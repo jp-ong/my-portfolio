@@ -102,6 +102,7 @@ const ProjectsSection = ({ setActive }) => {
           <MusicStreamingDesigns />
           <EBookDesigns />
           <CurrencyConverterDesigns />
+          <ShoppingAppDesigns />
         </div>
       </div>
     </section>
@@ -291,6 +292,53 @@ const CurrencyConverterDesigns = () => (
           height={831.6}
           alt="Currency Converter Checkout"
           title="Currency Converter Checkout"
+        />
+      </a>
+    </div>
+  </div>
+);
+
+const ShoppingAppDesigns = () => (
+  <div className={styles.portraitDesigns}>
+    <h4>Mobile Shopping Application</h4>
+    <div className={styles.designsImages}>
+      <a
+        href={`/images/projects/shoppingApp/shoppingAppCatalog.jpg`}
+        target="_blank"
+        aria-label="Shopping App Catalog Page"
+      >
+        <Image
+          src={`/images/projects/shoppingApp/shoppingAppCatalog.jpg`}
+          width={384}
+          height={831.6}
+          alt="Shopping App Catalog Page"
+          title="Shopping App Catalog Page"
+        />
+      </a>
+      <a
+        href={`/images/projects/shoppingApp/shoppingAppItem.jpg`}
+        target="_blank"
+        aria-label="Shopping App Item Page"
+      >
+        <Image
+          src={`/images/projects/shoppingApp/shoppingAppItem.jpg`}
+          width={384}
+          height={831.6}
+          alt="Shopping App Item Page"
+          title="Shopping App Item Page"
+        />
+      </a>
+      <a
+        href={`/images/projects/shoppingApp/shoppingAppCart.jpg`}
+        target="_blank"
+        aria-label="Shopping App Cart Page"
+      >
+        <Image
+          src={`/images/projects/shoppingApp/shoppingAppCart.jpg`}
+          width={384}
+          height={831.6}
+          alt="Shopping App Cart Page"
+          title="Shopping App Cart Page"
         />
       </a>
     </div>
