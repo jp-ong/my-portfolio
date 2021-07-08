@@ -135,6 +135,12 @@ const SkillsSection = ({ setActive }) => {
           level={3}
         />
         <SkillCard
+          imgSrc="/skills/postgresql.svg"
+          label="PostgreSQL"
+          link="https://www.postgresql.org/"
+          level={2}
+        />
+        <SkillCard
           imgSrc="/skills/mysql.svg"
           label="MySQL"
           link="https://www.mysql.com/"

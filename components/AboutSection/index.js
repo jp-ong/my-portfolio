@@ -34,14 +34,14 @@ const AboutSection = ({ setActive }) => {
       <div className={styles.aboutMe}>
         <h2>About Me</h2>
         <h3>
-          I'm a front-end and back-end developer from Metro Manila, Philippines.
+          Front-end & Back-end developer. UI / UX Designer. System Designer.
         </h3>
         <p>
-          I'm a front-end and back-end developer from Metro Manila, Philippines.
-          I enjoy taking on complex designs and visualized concepts and
-          implementing them into simple and beautiful systems for production. I
-          love challenging the obstacles I face, while doing it in the most
-          elegant and efficient way I am capable of.
+          I'm a developer from Metro Manila, Philippines. I enjoy taking on
+          complex designs and visualized concepts and implementing them into
+          simple and beautiful systems for production. I love challenging the
+          obstacles I face, while doing it in the most elegant and efficient way
+          I am capable of.
         </p>
         <p>
           I am most confident in my ability to work with JavaScript and its
